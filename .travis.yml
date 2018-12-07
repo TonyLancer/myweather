@@ -7,9 +7,10 @@ branches:
     - master
 
 before_script:
-  - npm install -g ionic@latest cordova
+  - npm install -g ionic cordova
 
-
+script:
+  - ionic cordova build browser --prod
 
 deploy:
   provider: pages
