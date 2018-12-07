@@ -10,7 +10,7 @@ before_script:
   - npm install -g ionic@latest cordova
 
 script:
-  - ionic cordova build android --prod
+  - ionic cordova build --prod
 
 deploy:
   provider: pages
