@@ -24,11 +24,10 @@ export class HomePage {
   ionViewWillEnter() {
 
     this.location = {
-      city: 'London',
+      city: 'Johannesburg',
       province: 'Gauteng'
     }
 
-    this.locationKey = '';
 
     this.weatherProvider.getLocationKey(this.location.city).subscribe(weather => {
       console.log(weather);
@@ -36,15 +35,13 @@ export class HomePage {
       this.locationKey = weather[0]['Key'];
       console.log(this.locationKey + ' inside the subscription.');
 
-      this.weatherProvider.getCurrentConditions(this.locationKey).subscribe
+
+      this.weatherProvider.getCurrentConditions(this.locationKey).subscribe(theweatherConditions => {
+        this.weatherConditions = theweatherConditions;
+        console.log('These are the weather conditions.......');
+        console.log(this.weatherConditions);
+      });
     });
-
-    console.log(this.locationKey + ' outside the subscription.');
-    console.log("Hello world");
-
-    /*this.weatherProvider.getCurrentConditions(this.locationKey).subscribe(weatherConditions => {
-      // console.log(weatherConditions);
-    }); */
   }
 
 }

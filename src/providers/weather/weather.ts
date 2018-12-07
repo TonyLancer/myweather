@@ -23,7 +23,7 @@ export class WeatherProvider {
     return this.http.get(this.url + '/' + province + '/' + city + '.json').map((res: Response) => res.json() );
   }
   getLocationKey(inputLocation) {
-    return this.http.get(this.locationKeyURL + 'apikey=' + this.apiKey + '&q=' + inputLocation);
+    return this.http.get(this.locationKeyURL + 'apikey=' + this.apiKey + '&q=' + inputLocation).map(res => res);
     // update the location key and send it to the next function to use
   }
 

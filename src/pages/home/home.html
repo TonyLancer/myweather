@@ -8,9 +8,10 @@
   <ion-grid *ngIf="weather">
     <ion-row>
       <ion-col width-50 offset-25>
-        <h2 class="location"> {{weather[0]['Country']['EnglishName']}} </h2>
-        <h2> {{weather[0]['Key']}} </h2>
-        <div class="icon"><img src="" alt=""></div>
+        <h2 class="location"> {{weather[0].EnglishName}}, {{weather[0].Country.EnglishName}} </h2>
+        <div class="icon"><img src="https://developer.accuweather.com/sites/default/files/0{{weatherConditions[0]['WeatherIcon']}}-s.png" alt=""></div>
+        <h2 class="weather-text"> {{weatherConditions[0]['WeatherText']}} </h2>
+        <h1 class="temp"> {{weatherConditions[0].Temperature.Metric.Value}}&deg;{{weatherConditions[0].Temperature.Metric.Unit}}</h1>
       </ion-col>
     </ion-row>
 
