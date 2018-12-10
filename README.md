@@ -3,17 +3,18 @@
 ![ionic-angular version](https://img.shields.io/badge/ionic--angular-3.9.2-green.svg)
 
 
-## MyWeather
+# MyWeather
 
-myweather is an Ionic app that uses the AccuWeather API to give weather updates.
+MyWeather is an Ionic app that uses the AccuWeather API to show weather updates.
 
 ## Images
 
-![iPhone image](/iPhone_5_6_7.png)
+Below are screenshots of the application running on Google Chrome.
 
-App running on iPhone5/6/7 device emulator on Google Chrome
-
-![Android image](iPhone_5_6_7.png)
+| iPhone 5/6/7 (iOS)  | Pixel 2 (Android) |
+| ------------- | ------------- |
+| ![iPhone image](/iPhone_5_6_7.png)  | ![Android image](iPhone_5_6_7.png)  |
+| App running on iPhone5/6/7 device emulator on Google Chrome  | App running on Google Pixel 2 device emulator on Google Chrome  |
 
 ## Install instructions
 
@@ -23,7 +24,5 @@ App running on iPhone5/6/7 device emulator on Google Chrome
 
 3. Install the dependencies by running `npm install`
 4. Run the app by running the command `ionic serve`. The app should open your default broswer on `http://localhost:8100`
-
-
 
 [here]: https://ionicframework.com/docs/intro/installation/
