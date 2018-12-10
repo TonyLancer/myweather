@@ -8,10 +8,31 @@
   <ion-grid *ngIf="weather">
     <ion-row>
       <ion-col width-50 offset-25>
-        <h2 class="location"> {{weather[0].EnglishName}}, {{weather[0].Country.EnglishName}} </h2>
-        <div class="icon"><img src="https://developer.accuweather.com/sites/default/files/0{{weatherConditions[0]['WeatherIcon']}}-s.png" alt=""></div>
-        <h2 class="weather-text"> {{weatherConditions[0]['WeatherText']}} </h2>
-        <h1 class="temp"> {{weatherConditions[0].Temperature.Metric.Value}}&deg;{{weatherConditions[0].Temperature.Metric.Unit}}</h1>
+        <h2 class="location"> {{weather.EnglishName}}, {{weather.Country.EnglishName}} </h2>
+
+        <div class="icon" *ngIf="weatherConditions">
+          <img  *ngIf="weatherConditions[0]['WeatherIcon'] < 10;then singlevalue; else doublevalue" alt="">
+        </div>
+
+        <h2 class="weather-text" *ngIf="weatherConditions">
+          {{weatherConditions[0]['WeatherText']}}
+        </h2>
+
+        <h1 class="temp" *ngIf="weatherConditions">
+          {{weatherConditions[0].Temperature.Metric.Value}}&deg;{{weatherConditions[0].Temperature.Metric.Unit}} ({{weatherConditions[0].Temperature.Imperial.Value}}&deg;{{weatherConditions[0].Temperature.Imperial.Unit}})
+        </h1>
+
+        <div class="button-update">
+            <button ion-button (click)="updateWeather()">Update</button>
+        </div>
+        <ng-template #singlevalue>
+            <img src="https://developer.accuweather.com/sites/default/files/0{{weatherConditions[0]['WeatherIcon']}}-s.png" alt="">
+        </ng-template>
+
+        <ng-template #doublevalue>
+            <img src="https://developer.accuweather.com/sites/default/files/{{weatherConditions[0]['WeatherIcon']}}-s.png" alt="">
+        </ng-template>
+
       </ion-col>
     </ion-row>
 

@@ -20,6 +20,18 @@
   color: color($colors, light);
   margin-top: 30px;
 }
+.button-update {
+  text-align: center;
+  padding-top: 50px;
+}
+
+
+.main-button {
+
+  background-color: white;
+  color: color($colors, material-primary);
+
+}
 
 .toolbar-title{
   text-align: center;
@@ -27,4 +39,26 @@
 
 .tabs-md tab-button-icon{
   color: #ccc;
+}
+
+.temp {
+  font-size: 35px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.location, .icon, .weather-text {
+  text-align: center;
+}
+
+.icon img {
+  width: 150px;
+}
+
+.location, .weather-text {
+  font-size: 25px;
+}
+
+.desc {
+font-size: 30px;
 }

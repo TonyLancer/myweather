@@ -10,13 +10,18 @@ import 'rxjs/add/operator/map';
 */
 @Injectable()
 export class WeatherProvider {
-  apiKey = 'CB2fefLyOLd9vQOkqHBecnm3jjsGBjdb';
+  apiKey = 'FEyEuTHHtARj1EcU4Q9iUQ5hUv5ZFLAu';
   url;
   locationKeyURL = 'http://dataservice.accuweather.com/locations/v1/cities/search?';
   currentLocationKeyURL = 'http://dataservice.accuweather.com/currentconditions/v1/';
+  geoPositionURL = 'http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?';
 
   constructor(public http: HttpClient) {
     console.log('Hello WeatherProvider Provider');
+  }
+
+  getGeoPosition(latitude, longitude) {
+    return this.http.get(this.geoPositionURL + 'apikey=' + this.apiKey + '&q=' + latitude + '%2C' + longitude);
   }
 
   getWeatherInfo(city, province) {
