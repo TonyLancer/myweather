@@ -1,0 +1,7 @@
+{
+  "name": "myweather",
+  "description": "A simple weather created in Ionic 3 using AccuWeather",
+  "repository": "https://github.com/TonyLancer/myweather",
+  "logo": "http://ionicframework.com/img/ionic-logo-blog.png",
+  "keywords": ["ionic", "static"]
+}
