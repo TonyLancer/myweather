@@ -1,5 +1,29 @@
 [![Build Status](https://travis-ci.org/TonyLancer/myweather.svg?branch=master)](https://travis-ci.org/TonyLancer/myweather)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![ionic-angular version](https://img.shields.io/badge/ionic--angular-3.9.2-green.svg)
 
 
-# myweather
-myweather is an Ionic V3 app that uses the AccuWeather API to display weather
+## MyWeather
+
+myweather is an Ionic app that uses the AccuWeather API to give weather updates.
+
+## Images
+
+![iPhone image](/iPhone_5_6_7.png)
+
+App running on iPhone5/6/7 device emulator on Google Chrome
+
+![Android image](iPhone_5_6_7.png)
+
+## Install instructions
+
+1. Make sure that you have the Ionic Framework installed. You can do so by using this command: `npm install -g ionic cordova`. For further instructions on installing the framework, follow the official instructions that can be found [here].
+
+2. Clone the repository `https://github.com/TonyLancer/myweather.git`
+
+3. Install the dependencies by running `npm install`
+4. Run the app by running the command `ionic serve`. The app should open your default broswer on `http://localhost:8100`
+
+
+
+[here]: https://ionicframework.com/docs/intro/installation/
