@@ -24,7 +24,9 @@
 
         <div class="button-update">
             <button ion-button (click)="updateWeather()">Update</button>
+            <button ion-button (click)="resetWeatherConditions()">Reset</button>
         </div>
+
         <ng-template #singlevalue>
             <img src="https://developer.accuweather.com/sites/default/files/0{{weatherConditions[0]['WeatherIcon']}}-s.png" alt="">
         </ng-template>

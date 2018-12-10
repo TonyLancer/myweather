@@ -10,7 +10,7 @@ import 'rxjs/add/operator/map';
 */
 @Injectable()
 export class WeatherProvider {
-  apiKey = 'FEyEuTHHtARj1EcU4Q9iUQ5hUv5ZFLAu';
+  apiKey = 'pptEVRsWOfgiYDdCrxR1GRO6UnwGpOuo';
   url;
   locationKeyURL = 'http://dataservice.accuweather.com/locations/v1/cities/search?';
   currentLocationKeyURL = 'http://dataservice.accuweather.com/currentconditions/v1/';
