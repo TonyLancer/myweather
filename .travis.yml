@@ -6,8 +6,8 @@ branches:
   - master
 before_script:
 - npm install -g ionic cordova
-script:
 - npm install express --save
+script:
 - npm run build
 deploy:
   provider: heroku
