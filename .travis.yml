@@ -10,9 +10,7 @@ before_script:
   - npm install -g ionic cordova
 
 script:
-  - ionic cordova platform rm browser --save
-  - ionic cordova platform add browser@latest --save
-  - ionic cordova build browser --prod
+  - npm run build
 
 deploy:
   provider: pages
