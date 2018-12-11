@@ -8,7 +8,7 @@ before_script:
 - npm install -g ionic cordova
 - npm install express --save
 script:
-- npm run build
+- ionic build browser --prod
 deploy:
  - provider: heroku
    app: myweather-tony
