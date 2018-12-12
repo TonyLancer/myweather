@@ -10,13 +10,6 @@ before_script:
 script:
 - ionic cordova build browser --verbose
 deploy:
- - provider: heroku
-   app: myweather-tony
-   api_key:
-     secure: DMQR7sIDWo58thLRjJ/ozvNZPhIdrCRLGPMTJUaLco+/MLe2qTc/upDlm3FdJpk4t4frSYEuJT+exsjANQfvitztT2IUx1F66a0Ef01oXAZ7YMsfnt57WtslToubN3fa3FgKf4BpOZeK5opTRaqAQzdedb4lbTfvlFWhLQ/0CuuKjYbNkkF3HdaGm4Cviggisy+kmiOeG3Qau08TWWzIvfFUJ2pFt02iXCKqu75MzpwUmZjFY2J2i5rEMURAG4aBamfEFJdYC6woaAC+MPnqdbTKg40/B1bxq30z/niYdi4dNQiKVK+GrSJYBZoq01T+YhKmqS5i1txyFSpDl52CfLUnlmdnOVDHlG//HtKWUYrIVcca8B4cYKpoGeSTxTl9u0CU51jBV2EfsaOO05wTMDS5FEk0efI/L8d8bgXQVm6ZH8LN3zh+26FoosRc9DcCKIzGImFYe/PY7evTe4tKWv9por+g2hA/qF33i22yS63OvTKFKCtP8JjXC4g2FEVRAO6Javn2xTdWYYYMVAcJKuoidmOFgGTV3nXgbcyKe0vaxQYLQecNjuipKbH0jsEYO/OeEO/TuoLVMKKAk2Z/zGiftRNpGxSYu46/f2dVFVUSGq70tXni9Hp93hjUtTcjhA3LAM9j36py3Tr8MY10MZEKVxBz12FXrFi2poFZd/s=
-   on:
-     repo: TonyLancer/myweather
-     branch: master
  - provider: pages
    skip-cleanup: true
    github-token: "$GITHUB_TOKEN"
